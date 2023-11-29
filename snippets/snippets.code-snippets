@@ -1,6 +1,6 @@
 {
   "Create a Page Component": {
-    "prefix": "prc",
+    "prefix": "next-prc",
     "body": [
       "",
       "export default function ${1:Name}Page() {",
@@ -11,10 +11,10 @@
       "  );",
       "}"
     ],
-    "description": "Create a Page Component"
+    "description": "Next.js: Create a Page Component"
   },
   "Create a Layout Root and MetaData Component": {
-    "prefix": "lmrc",
+    "prefix": "next-lmrc",
     "body": [
       "",
       "export const metadata = {",
@@ -33,10 +33,10 @@
       "  );",
       "}"
     ],
-    "description": "Create a Layout Root Component and metadata"
+    "description": "Next.js: Create a Layout Root Component and metadata"
   },
   "Create a Layout Root and MetaData Component jsx": {
-    "prefix": "lmrc-js",
+    "prefix": "next-lmrc-js",
     "body": [
       "",
       "export const metadata = {",
@@ -53,10 +53,10 @@
       "  );",
       "}"
     ],
-    "description": "Create a Layout Root Component and metadata"
+    "description": "Next.js: Create a Layout Root Component and metadata"
   },
   "Create a Layout Root  Component": {
-    "prefix": "lrc",
+    "prefix": "next-lrc",
     "body": [
       "",
       "export default function ${1:Root Name}Layout({",
@@ -71,10 +71,10 @@
       "  );",
       "}"
     ],
-    "description": "Create a Layout Root Component and metadata"
+    "description": "Next.js: Create a Layout Root Component and metadata"
   },
   "Create a Client Component": {
-    "prefix": "crc",
+    "prefix": "next-crc",
     "body": [
       "'use client';",
       "",
@@ -86,10 +86,10 @@
       "  );",
       "}"
     ],
-    "description": "Create a Client Component"
+    "description": "Next.js: Create a Client Component"
   },
   "Create a Client Component jsx": {
-    "prefix": "crc-js",
+    "prefix": "next-crc-js",
     "body": [
       "'use client';",
       "",
@@ -101,10 +101,10 @@
       "  );",
       "}"
     ],
-    "description": "Create a Client Component"
+    "description": "Next.js: Create a Client Component"
   },
   "Create a MetaData": {
-    "prefix": "mr",
+    "prefix": "next-mr",
     "body": [
       "",
       "export const metadata = {",
@@ -112,10 +112,10 @@
       " description: '${1:SEO Description}',",
       "};"
     ],
-    "description": "Create a MetaData Component"
+    "description": "Next.js: Create a MetaData Component"
   },
   "Create a function generateMetaData": {
-    "prefix": "gmrf",
+    "prefix": "next-gmrf",
     "body": [
       "import type { Metadata } from 'next'",
       "",
@@ -124,10 +124,10 @@
       "   return { title: product.title }",
       "}"
     ],
-    "description": "Create a generateMetaData Component"
+    "description": "Next.js: Create a generateMetaData Component"
   },
   "Create a function generateStaticParams for Dynamic Page Static": {
-    "prefix": "gsp",
+    "prefix": "next-gsp",
     "body": [
       "",
       "export async function generateStaticParams() {",
@@ -138,10 +138,10 @@
       " }));",
       "}"
     ],
-    "description": "Create a generateStaticParams function for Dynamic Page Static"
+    "description": "Next.js: Create a generateStaticParams function for Dynamic Page Static"
   },
   "Create a function Route Handler API GET with Dynamic": {
-    "prefix": "ragd",
+    "prefix": "next-ragd",
     "body": [
       "import { NextResponse, NextRequest } from 'next/server'",
       "",
@@ -150,10 +150,10 @@
       "  const { ${1:slug} } = context.params",
       "}"
     ],
-    "description": "Create a Route Handler API GET with Dynamic"
+    "description": "Next.js: Create a Route Handler API GET with Dynamic"
   },
   "Create a function Route Handler API GET": {
-    "prefix": "rag",
+    "prefix": "next-rag",
     "body": [
       "import { NextResponse, NextRequest } from 'next/server'",
       "",
@@ -164,10 +164,10 @@
       "  }), { status: 200 } );",
       "}"
     ],
-    "description": "Create a Route Handler API GET"
+    "description": "Next.js: Create a Route Handler API GET"
   },
   "Create a function Route Handler API GET and Search": {
-    "prefix": "rags",
+    "prefix": "next-rags",
     "body": [
       "import { NextResponse, NextRequest } from 'next/server'",
       "",
@@ -184,10 +184,10 @@
       "  }), { status: 200 } );",
       "}"
     ],
-    "description": "Create a Route Handler API GET and Search"
+    "description": "Next.js: Create a Route Handler API GET and Search"
   },
   "Create a function Route Handler API POST": {
-    "prefix": "rap",
+    "prefix": "next-rap",
     "body": [
       "import { NextResponse, NextRequest } from 'next/server'",
       "",
@@ -197,10 +197,10 @@
       " return NextResponse.json( $1:{ title } }, { status: 201 });",
       " }"
     ],
-    "description": "Create a Route Handler API GET POST"
+    "description": "Next.js: Create a Route Handler API GET POST"
   },
   "Create a function Route Handler API UPDATE": {
-    "prefix": "rau",
+    "prefix": "next-rau",
     "body": [
       "import { NextResponse, NextRequest } from 'next/server'",
       "",
@@ -210,10 +210,10 @@
       " return NextResponse.json({ $1:{ title } }, { status: 201 });",
       " }"
     ],
-    "description": "Create a Route Handler API GET UPDATE"
+    "description": "Next.js: Create a Route Handler API GET UPDATE"
   },
   "Create a function Route Handler API DELETE": {
-    "prefix": "rad",
+    "prefix": "next-rad",
     "body": [
       "import { NextResponse, NextRequest } from 'next/server'",
       "",
@@ -221,10 +221,10 @@
       " // your function here",
       " }"
     ],
-    "description": "Create a Route Handler API GET DELETE"
+    "description": "Next.js: Create a Route Handler API GET DELETE"
   },
   "Create a function Loading": {
-    "prefix": "load",
+    "prefix": "next-load",
     "body": [
       "",
       "export default function Loading() {",
@@ -232,10 +232,10 @@
       " return (<div>Loading...</div>)",
       " }"
     ],
-    "description": "Create a Loading component"
+    "description": "Next.js: Create a Loading component"
   },
   "Create a function Error": {
-    "prefix": "err",
+    "prefix": "next-err",
     "body": [
       "'use client'; // Error components must be Client Components",
       "",
@@ -265,7 +265,6 @@
       "  );",
       "}"
     ],
-    "description": "Error component with error handling and recovery"
+    "description": "Next.js: Error component with error handling and recovery"
   }
 }
-
