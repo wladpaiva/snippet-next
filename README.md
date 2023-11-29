@@ -1,8 +1,8 @@
-# Next.js 13 Extension Snippets
+# Next.js 14 Extension Snippets
 
-This is a collection of useful code snippets to speed up development in `Next.js 13` (`app`) directory.
+This is a collection of useful code snippets to speed up development in `Next.js 14` (`app`) directory.
 
-## Usage 
+## Usage
 
 Tab trigger snippets are available for the following languages: `TypeScript React`, `Javascript React`.
 
@@ -10,29 +10,29 @@ Tab trigger snippets are available for the following languages: `TypeScript Reac
 
 ## Features
 
-| Command                                                | Description                                                        |
-| ------------------------------------------------------ | ------------------------------------------------------------------ |
-| [`prc`](#page-component)                               | Create a new page component.                                       |
-| [`lmrc`](#layout-root-and-metadata-component)          | Create a new layout root component with metadata.                  |
-| [`lrc`](#layout-root-component)                        | Create a new layout root component.                                |
-| [`crc`](#client-component)                             | Create a new client component.                                     |
-| [`mr`](#metadata)                                      | Create a new metadata.                                             |
-| [`gmrf`](#generatemetadata)                            | Create a new generateMetaData for SEO.                             |
-| [`gsp`](#generatestaticparams-for-dynamic-page-static) | Create a new generateStaticParams function for dynamic page static |
-| [`rag`](#route-handler-api-get)                        | Create a function Route Handler API GET.                           |
-| [`ragd`](#route-handler-api-get-with-dynamic)          | Create a function Route Handler API GET with Dynamic.              |
-| [`rags`](#route-handler-api-get-and-search)            | Create a function Route Handler API GET and Search.                |
-| [`rap`](#route-handler-api-post)                       | Create a function Route Handler API POST.                          |
-| [`rau`](#route-handler-api-update)                     | Create a function Route Handler API UPDATE.                        |
-| [`rad`](#route-handler-api-delete)                     | Create a function Route Handler API DELETE.                        |
-| [`load`](#loading)                                     | Create a Loading component                                         |
-| [`err`](#error)                                        | Create a Error component with error handling and recovery          |
+| Command                                                     | Description                                                        |
+| ----------------------------------------------------------- | ------------------------------------------------------------------ |
+| [`next-prc`](#page-component)                               | Create a new page component.                                       |
+| [`next-lmrc`](#layout-root-and-metadata-component)          | Create a new layout root component with metadata.                  |
+| [`next-lrc`](#layout-root-component)                        | Create a new layout root component.                                |
+| [`next-crc`](#client-component)                             | Create a new client component.                                     |
+| [`next-mr`](#metadata)                                      | Create a new metadata.                                             |
+| [`next-gmrf`](#generatemetadata)                            | Create a new generateMetaData for SEO.                             |
+| [`next-gsp`](#generatestaticparams-for-dynamic-page-static) | Create a new generateStaticParams function for dynamic page static |
+| [`next-rag`](#route-handler-api-get)                        | Create a function Route Handler API GET.                           |
+| [`next-ragd`](#route-handler-api-get-with-dynamic)          | Create a function Route Handler API GET with Dynamic.              |
+| [`next-rags`](#route-handler-api-get-and-search)            | Create a function Route Handler API GET and Search.                |
+| [`next-rap`](#route-handler-api-post)                       | Create a function Route Handler API POST.                          |
+| [`next-rau`](#route-handler-api-update)                     | Create a function Route Handler API UPDATE.                        |
+| [`next-rad`](#route-handler-api-delete)                     | Create a function Route Handler API DELETE.                        |
+| [`next-load`](#loading)                                     | Create a Loading component                                         |
+| [`next-err`](#error)                                        | Create a Error component with error handling and recovery          |
 
 ## Full Snippets
 
 ### Page Component
 
-Prefix: `prc`
+Prefix: `next-prc`
 
 ```tsx
 export default function ${Name}Page() {
@@ -47,7 +47,7 @@ export default function ${Name}Page() {
 
 ### Layout Component
 
-Prefix: `lrc`
+Prefix: `next-lrc`
 
 ```tsx
 
@@ -68,7 +68,7 @@ export default function ${Root Name}Layout({
 
 ### Client Component
 
-Prefix: `crc`
+Prefix: `next-crc`
 
 ```tsx
 
@@ -87,7 +87,7 @@ export default function ${Name}() {
 
 ### Layout and Metadata Component
 
-Prefix: `lmrc`
+Prefix: `next-lmrc`
 
 ```tsx
 export const metadata = {
@@ -111,7 +111,7 @@ export default function ${Root Name}Layout({
 
 ### Metadata
 
-Prefix: `mr`
+Prefix: `next-mr`
 
 ```tsx
 export const metadata = {
@@ -122,7 +122,7 @@ export const metadata = {
 
 ### generateMetaData
 
-Prefix: `gmrf`
+Prefix: `next-gmrf`
 
 ```tsx
 
@@ -142,7 +142,7 @@ export async function generateMetadata({
 
 ### generateStaticParams for Dynamic Page Static
 
-Prefix: `gsp`
+Prefix: `next-gsp`
 
 ```tsx
 export async function generateStaticParams() {
@@ -156,7 +156,7 @@ export async function generateStaticParams() {
 
 ### Route Handler API GET
 
-Prefix: `rag`
+Prefix: `next-rag`
 
 ```ts
 import { NextResponse, NextRequest } from 'next/server';
@@ -170,7 +170,7 @@ export async function GET(request: Request, context: { params: { ${slug}: string
 
 ### Route Handler API GET with Dynamic
 
-Prefix: `ragd`
+Prefix: `next-ragd`
 
 ```ts
 
@@ -185,7 +185,7 @@ export async function GET(request: Request, context: { params: { ${slug}: string
 
 ### Route Handler API GET and Search
 
-Prefix: `rags`
+Prefix: `next-rags`
 
 ```ts
 import { NextResponse, NextRequest } from "next/server";
@@ -199,7 +199,7 @@ export async function GET(request: Request) {
 
 ### Route Handler API POST
 
-Prefix: `rap`
+Prefix: `next-rap`
 
 ```ts
 import { NextResponse, NextRequest } from "next/server";
@@ -212,7 +212,7 @@ export async function POST(request: Request) {
 
 ### Route Handler API UPDATE
 
-Prefix: `rau`
+Prefix: `next-rau`
 
 ```ts
 import { NextResponse, NextRequest } from "next/server";
@@ -225,7 +225,7 @@ export async function PUT(request: Request) {
 
 ### Route Handler API DELETE
 
-Prefix: `rad`
+Prefix: `next-rad`
 
 ```ts
 import { NextResponse, NextRequest } from "next/server";
@@ -236,7 +236,7 @@ export async function DELETE(request: Request) {
 
 ### Loading
 
-Prefix: `load`
+Prefix: `next-load`
 
 ```tsx
 export default function Loading() {
@@ -246,13 +246,19 @@ export default function Loading() {
 
 ### Error
 
-Prefix: `err`
+Prefix: `next-err`
 
 ```tsx
 "use client";
 import { useEffect } from "react";
 
-export default function Error({ error, reset }: { error: Error; reset: () => void }) {
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error;
+  reset: () => void;
+}) {
   useEffect(() => {
     // Log the error
     console.error(error);
@@ -261,13 +267,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
   return (
     <div>
       <h2>Something went wrong!</h2>
-      <button
-        onClick={
-          () => reset()
-        }
-      >
-        Try again
-      </button>
+      <button onClick={() => reset()}>Try again</button>
     </div>
   );
 }
